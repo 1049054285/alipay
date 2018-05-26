@@ -83,10 +83,8 @@ def page2(request):
         logger.info('POST验证:'+str(status))
         # print('POST验证', status)
         if status:
-            logger.info("post_dict['stade_status']: "+str(post_dict['stade_status']))
+            logger.info("post_dict['trade_status']: "+str(post_dict['trade_status']))
             logger.info("post_dict['out_trade_no']: "+str(post_dict['out_trade_no']))
-            # print("post_dict['stade_status']: ", post_dict['stade_status'])
-            # print("post_dict['out_trade_no']: ", post_dict['out_trade_no'])
 
         return HttpResponse('POST返回')
     else:
