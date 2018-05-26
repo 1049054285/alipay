@@ -39,7 +39,7 @@ def page1(request):
         alipay = ali()
         # 生成支付的url
         query_params = alipay.direct_pay(
-            subject="充气式韩红",  # 商品简单描述
+            subject="商品1",  # 商品简单描述
             out_trade_no="x2" + str(time.time()),  # 商户订单号
             total_amount=money,  # 交易金额(单位: 元 保留俩位小数)
         )
