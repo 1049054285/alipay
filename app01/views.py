@@ -33,6 +33,7 @@ def ali():
 
 def page1(request):
     if request.method == "GET":
+        logger.info(request.get_host())
         return render(request, 'page1.html')
     else:
         money = float(request.POST.get('money'))
